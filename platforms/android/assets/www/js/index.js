@@ -184,8 +184,8 @@ function save(dataURL){
   				 "left": pos.left,
   				 "top": pos.top
             });
-            	// $(objName).removeAttr('id');
-            	$(objName).removeAttr("theImg");
+            	$(objName).removeAttr('id');
+            	// $(objName).removeAttr("theImg");
 				//When an existiung object is dragged
 				$(objName).draggable({
                 containment: 'can',
@@ -208,8 +208,9 @@ function save(dataURL){
                 //Get the dynamically item id
                 draggedNumber = ui.helper.attr('id').search(/drag([0-9])/)
                 itemDragged = "dragged" + RegExp.$1
-                console.log(itemDragged)
+                console.log(itemDragged);
                 $("#clonediv" + counter).addClass(itemDragged);
+                // $("#clonediv" + counter).removeClass(itemDragged);
             					}
         					}
     				});
