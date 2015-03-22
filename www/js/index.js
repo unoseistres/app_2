@@ -132,7 +132,7 @@ $(document).on("pagecreate","#section5",function(){
 });
 ////////////////////////////////////////////////////external panel
 
-var panel = '<div data-role="panel" id="mypanel" data-position="right" data-display="overlay" data-position-fixed="true"></div>';
+var panel = '<div data-role="panel"  id="mypanel" data-position="right" data-display="overlay" data-position-fixed="true"></div>';
 
 $(document).one('pagebeforecreate', function () {
   $.mobile.pageContainer.prepend(panel);
@@ -165,9 +165,18 @@ function save(dataURL){
     window.canvas2ImagePlugin.saveImageDataToLibrary(
         function(msg){//the file of the images
             console.log(msg);
-            $('#mypanel').prepend('<img id="theImg" src="'+msg+'"/>');//path of new images and appending them to panel 
-   
-  			$(function() {
+          $('#mypanel').prepend('<img id="theImg" class="dragImg", "theImg" src="'+msg+'"/>');//path of new images and appending them to panel 
+            
+            
+            
+            
+            //path of new images and appending them to panel 
+   // <img id="theImg" draggable="true" ontouchstart="get_pos(event)" ondragstart="drag(event)"/>
+ 
+ 
+ 
+ /*
+$(function() {
 	  			
   				 //Counter
   				 counter = 0;
@@ -184,8 +193,7 @@ function save(dataURL){
   				 "left": pos.left,
   				 "top": pos.top
             });
-            	$(objName).removeAttr('id');
-            	// $(objName).removeAttr("theImg");
+            	$(objName).removeClass("drag");
 				//When an existiung object is dragged
 				$(objName).draggable({
                 containment: 'can',
@@ -215,8 +223,102 @@ function save(dataURL){
         					}
     				});
   			});
-  
-  	
+*/
+  			
+/*
+  	$('#theImg').draggable({
+    helper: "clone"
+    
+}).on('dragstart', function (e, ui) {
+    $(ui.helper).css('z-index','999999');
+}).on('dragstop', function (e, ui) {
+    $(this).after($(ui.helper).clone(true).draggable());
+    $("#theImg").clone().insertAfter("#two");
+ 
+
+});
+
+$( "#two" ).droppable({
+      drop: function( event, ui ) {
+        $( this )
+          // .addClass("ui-state-highlight")
+          console.log("dropped");
+      }
+      
+    });
+*/
+/*
+ $(function() {
+
+
+  $('#theImg').draggable({
+	  helper: "clone", 
+	  cursor: 'move', 
+	  containment: '#two',
+	  
+	  stop: function() {
+
+        var cont = $('#two').offset();
+
+        var img = $(this).offset();
+
+        $('#xy').text('x-axis :' + (img.left - cont.left) + ', y-axis :' + (img.top - cont.top));
+
+     }});
+
+   });
+*/
+ 
+ $(function(){  
+ //Make every clone image unique.  
+   var counts = [0];
+    var resizeOpts = { 
+      handles: "all" ,autoHide:true
+    };    
+   $(".dragImg").draggable({
+                         helper: "clone",
+                         //Create counter
+                         start: function() { counts[0]++; }
+                        });
+
+$("#dropHere").droppable({
+       drop: function(e, ui){
+               if(ui.draggable.hasClass("dragImg")) {
+     $(this).append($(ui.helper).clone());
+     console.log("clone dropped");
+   
+   //Pointing to the dragImg class in dropHere and add new class.
+         $("#dropHere .dragImg").addClass("item-"+counts[0]);
+            $("#dropHere .theImg").addClass("imgSize-"+counts[0]);
+                
+   //Remove the current class (ui-draggable and dragImg)
+         $("#dropHere .item-"+counts[0]).removeClass("dragImg ui-draggable ui-draggable-dragging");
+
+$(".item-"+counts[0]).dblclick(function() {
+$(this).remove();
+});     
+	make_draggable($(".item-"+counts[0])); 
+      $(".imgSize-"+counts[0]).resizable(resizeOpts);     
+       }
+
+       }
+      });
+
+
+var zIndex = 0;
+function make_draggable(elements)
+{	
+	elements.draggable({
+		containment:'parent',
+		start:function(e,ui){ ui.helper.css('z-index',++zIndex); },
+		stop:function(e,ui){
+		}
+	});
+}    
+
+
+    
+   }); 	
        
         },
         
@@ -229,14 +331,5 @@ function save(dataURL){
     );
     	alert("hi");
 }
-
-
-
-
-
-
-
- 
-
 
 

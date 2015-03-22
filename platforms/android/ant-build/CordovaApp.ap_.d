@@ -39,6 +39,11 @@
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/css/examples.css \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/css/index.css \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/css/jquery-ui.css \
+/Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/css/jquery-ui.min.css \
+/Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/css/jquery-ui.structure.css \
+/Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/css/jquery-ui.structure.min.css \
+/Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/css/jquery-ui.theme.css \
+/Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/css/jquery-ui.theme.min.css \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/css/jquery.fullPage.css \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/css/jquery.mobile-1.4.5.min.css \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/css/normalize.css \
