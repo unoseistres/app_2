@@ -316,19 +316,27 @@ overflow-y: hidden !important;
   }
   	#theImg{
 	  	
-	  	 width:80px;
+	  width:80px;
 	  height:80px;
 	  z-index: 100000;
-	  position:relative;
+	  /* position:relative; */
 	  
 	  	}
+	  	
+	  	.dragImg{
+		  	
+		  	width: 100px;
+		  	height: 150px;
+		  	z-index: 9999999;
+		  	
+		  	}
   
 	  
 	  .theImg{
 	  width:80px;
 	  height:80px;
 	  z-index: 100000;
-	  position:relative;
+	 /*  position:relative; */
 	  }
 
 		  
