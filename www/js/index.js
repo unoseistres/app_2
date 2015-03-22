@@ -132,7 +132,7 @@ $(document).on("pagecreate","#section5",function(){
 });
 ////////////////////////////////////////////////////external panel
 
-var panel = '<div data-role="panel"  id="mypanel" class="dragImg" data-position="right" data-display="overlay" data-position-fixed="true"></div>';
+var panel = '<div data-role="panel"  id="mypanel" data-position="right" data-display="overlay" data-position-fixed="true"></div>';
 
 $(document).one('pagebeforecreate', function () {
   $.mobile.pageContainer.prepend(panel);
@@ -165,7 +165,7 @@ function save(dataURL){
     window.canvas2ImagePlugin.saveImageDataToLibrary(
         function(msg){//the file of the images
             console.log(msg);
-          $('#mypanel').prepend('<img id="theImg" class="dragImg", "theImg" src="'+msg+'"/>');//path of new images and appending them to panel 
+          $('#mypanel').prepend('<img id="theImg" class="dragImg" src="'+msg+'"/>');//path of new images and appending them to panel 
             
             
             
