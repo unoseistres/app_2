@@ -132,7 +132,7 @@ $(document).on("pagecreate","#section5",function(){
 });
 ////////////////////////////////////////////////////external panel
 
-var panel = '<div data-role="panel"  id="mypanel" data-position="right" data-display="overlay" data-position-fixed="true"></div>';
+var panel = '<div data-role="panel"  id="mypanel" class="dragImg" data-position="right" data-display="overlay" data-position-fixed="true"></div>';
 
 $(document).one('pagebeforecreate', function () {
   $.mobile.pageContainer.prepend(panel);
