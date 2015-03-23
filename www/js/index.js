@@ -166,7 +166,7 @@ function save(dataURL){
     window.canvas2ImagePlugin.saveImageDataToLibrary(
         function(msg){//the file of the images
             console.log(msg);
-          $('#mypanel').prepend('<img id="theImg" class="dragImg", "theImg" src="'+msg+'"/>');//path of new images and appending them to panel 
+          $('#mypanel').prepend('<img id="theImg" class="dragImg" src="'+msg+'"/>');//path of new images and appending them to panel 
             
  
  
@@ -193,6 +193,7 @@ $("#dropHere").droppable({
    //Pointing to the dragImg class in dropHere and add new class.
          $("#dropHere .dragImg").addClass("item-"+counts[0]);
             $("#dropHere .theImg").addClass("imgSize-"+counts[0]);
+            console.log("adding new class");
                 
    //Remove the current class (ui-draggable and dragImg)
          $("#dropHere .item-"+counts[0]).removeClass("dragImg ui-draggable ui-draggable-dragging");

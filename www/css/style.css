@@ -331,12 +331,14 @@ overflow-y: hidden !important;
 		  	}
   
 	  
-	  .theImg{
+	  /*
+.theImg{
 	  width:80px;
 	  height:80px;
 	  z-index: 100000;
 	  position:absolute;
 	  }
+*/
 
 		  
 		  #dropHere {
