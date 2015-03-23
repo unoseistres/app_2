@@ -166,7 +166,7 @@ function save(dataURL){
     window.canvas2ImagePlugin.saveImageDataToLibrary(
         function(msg){//the file of the images
             console.log(msg);
-          $('#mypanel').prepend('<img id="theImg" class="dragImg" src="'+msg+'"/>');//path of new images and appending them to panel 
+          $('#mypanel').prepend('<img id="theImg" class="dragImg", "theImg" src="'+msg+'"/>');//path of new images and appending them to panel 
             
  
  
