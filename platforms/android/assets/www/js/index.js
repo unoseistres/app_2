@@ -193,16 +193,19 @@ $("#dropHere").droppable({
    //Pointing to the dragImg class in dropHere and add new class.
          $("#dropHere .dragImg").addClass("item-"+counts[0]);
             $("#dropHere .theImg").addClass("imgSize-"+counts[0]);
-            console.log("adding new class");
+            console.log("adding new ");
                 
    //Remove the current class (ui-draggable and dragImg)
          $("#dropHere .item-"+counts[0]).removeClass("dragImg ui-draggable ui-draggable-dragging");
 
-$(".item-"+counts[0]).dblclick(function() {
-$(this).remove(); });     
-	make_draggable($(".item-"+counts[0])); 
-      $(".imgSize-"+counts[0]).resizable(resizeOpts);     
-       }
+
+$(".item-"+counts[0]).tap(function() {
+$(this).remove(); }); 
+make_draggable($(".item-"+counts[0])); 
+$(".imgSize-"+counts[0]).resizable(resizeOpts);     
+       } 
+
+
 
        }
       });
@@ -222,6 +225,9 @@ function make_draggable(elements)
 
     
    }); 	
+       
+       
+       
        
         },
         

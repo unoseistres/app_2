@@ -46,7 +46,9 @@
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/css/jquery-ui.theme.min.css \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/css/jquery.fullPage.css \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/css/jquery.mobile-1.4.5.min.css \
+/Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/css/jquery.panzoom.min.css \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/css/normalize.css \
+/Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/css/pinchzoomer.min.css \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/css/style.css \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/css/style2.css \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/img/connect.png \
@@ -61,6 +63,7 @@
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/img/wire_frames-05.png \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/js/examples.js \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/js/fullPage.js-master \
+/Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/js/hammer.js \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/js/index.js \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/js/javascript.js \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/js/jquery-2.1.3.min.js \
@@ -72,6 +75,7 @@
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/js/jquery.ui.touch-punch.js \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/js/modernizr-2.6.2.min.js \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/js/ninjaScroll.js \
+/Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/js/pinchzoom.js \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/js/SavePhotoPlugin.js \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/js/touch-punch.js \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/js/fullPage.js-master/bower.json \
