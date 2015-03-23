@@ -44,7 +44,7 @@ html, body {
  }
 
 #section2{
-	/*  position:absolute; */
+	 position:absolute;
 	 border: black;
 	 background-color: #d0baf5;
 	 width: device-width;
@@ -145,7 +145,6 @@ div#rectangle{
 }
 
 /*
-
 .slide.in {
 	-webkit-animation-name: bounceInRight !important; 
 	animation-name: bounceInRight; 
@@ -243,7 +242,7 @@ margin-left: 700px;
 	
 	width:200px;
 	z-index: 10000;
-	background: blue;
+	/* background: blue; */
 	color: white;
 	/*
 overflow-y: hidden !important; 
@@ -316,19 +315,19 @@ overflow-y: hidden !important;
   }
   	#theImg{
 	  	
-	  width:80px;
-	  height:80px;
+	  width:30px;
+	  height:30px;
 	  z-index: 100000;
-	  /* position:relative; */
+	  position:absolute;
 	  
 	  	}
 	  	
 	  	.dragImg{
 		  	
-		  	width: 100px;
-		  	height: 150px;
+		  	width: 50px;
+		  	height: 50px;
 		  	z-index: 9999999;
-		  	
+		  	position: relative;
 		  	}
   
 	  
@@ -336,13 +335,17 @@ overflow-y: hidden !important;
 	  width:80px;
 	  height:80px;
 	  z-index: 100000;
-	 /*  position:relative; */
+	  position:absolute;
 	  }
 
 		  
 		  #dropHere {
-    width:400px;
-    height: 400px;
+			  left:100px;
+			  top:100px;
+    width:700px;
+    height:400px;
+   
+    position: absolute;
     border: dotted 1px black;
     
 }
@@ -356,13 +359,6 @@ li span {
     display: inline-block; }
   }
 
-/*
-#clonediv{
-	width:80px;
-	  height:80px;
-	  z-index: 100000;
-	}
-*/
 
 #can{
 	z-index: 100000;
@@ -374,19 +370,4 @@ li span {
 	border:2px solid;
 	}
 	
-	#two{
-		
-		
-	z-index: 100000;
-	width:500px;
-	height:500px;
-	position:absolute;
-	top:15%;
-	left:5%;
-	border:2px solid;
-	}
-		
-  
-
-
-
+	

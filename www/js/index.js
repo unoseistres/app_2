@@ -137,6 +137,7 @@ var panel = '<div data-role="panel" id="mypanel" data-position="right" data-disp
 $(document).one('pagebeforecreate', function () {
   $.mobile.pageContainer.prepend(panel);
   $("#mypanel").panel();
+  $('#section2').append($("#mypanel"))
      
 });
 
@@ -185,7 +186,7 @@ function save(dataURL){
 $("#dropHere").droppable({
        drop: function(e, ui){
                if(ui.draggable.hasClass("dragImg")) {
-     $(this).append($(ui.helper).clone().css('z-index','999999', 'width','50', 'height','50'));
+     $(this).append($(ui.helper).clone().css('z-index','999999'));
    
      console.log("clone dropped");
    
