@@ -73,11 +73,13 @@
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/js/jquery.mobile-1.4.5 \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/js/jquery.mobile-1.4.5.js \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/js/jquery.ui.touch-punch.js \
+/Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/js/jquerypanzoom.js \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/js/modernizr-2.6.2.min.js \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/js/ninjaScroll.js \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/js/pinchzoom.js \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/js/SavePhotoPlugin.js \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/js/touch-punch.js \
+/Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/js/zepto.min.js \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/js/fullPage.js-master/bower.json \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/js/fullPage.js-master/examples \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/js/fullPage.js-master/jquery.fullPage.css \
