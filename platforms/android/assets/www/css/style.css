@@ -1,5 +1,4 @@
 
-
 html, body {
     max-width: 100% !important;
 	overflow-y: hidden !important; 
@@ -315,8 +314,8 @@ overflow-y: hidden !important;
   }
   	#theImg{
 	  	
-	  width:30px;
-	  height:30px;
+	  width:50px;
+	  height:50px;
 	  z-index: 100000;
 	  /* position:absolute; */
 	  
@@ -331,14 +330,18 @@ overflow-y: hidden !important;
 		  	}
   
 	  
-	  /*
+	  
 .theImg{
-	  width:80px;
+	 /*
+ width:80px;
 	  height:80px;
-	  z-index: 100000;
-	  position:absolute;
-	  }
 */
+	 /*
+ z-index: 100000;
+	  position:absolute;
+*/
+	  }
+
 
 		  
 		  #dropHere {
@@ -371,76 +374,4 @@ li span {
 	left:5%;
 	border:2px solid;
 	}
-	
-	.zoomInOn, .zoomInOff, .zoomOutOn, .zoomOutOff
-{
-   width:34px;
-   height:34px;
-   display:block;
-   position:absolute;
-   -webkit-user-select: none;
-   -moz-user-select: none;
-   -ms-user-select: none;
-   user-select: none;
-}
- 
-.zoomInOn, .zoomInOff
-{
-   background-image:url(../assets/zoom_in.png);
-   top:10px;
-   right:10px;
-}
- 
-.zoomOutOn, .zoomOutOff
-{
-   background-image:url(../assets/zoom_out.png);
-   top:52px;
-   right:10px;
-}
- 
-.zoomInOn, .zoomOutOn
-{
-   opacity:1;
-   cursor:pointer;
-}
- 
-.zoomInOff, .zoomOutOff
-{
-   opacity:0.3;
-   cursor:auto;
-}
-
-*, *:after, *:before {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-}
-
-a {
-    color: #4986e7;
-}
-
-.bg1, .green { background: #42d692; }
-.bg2, .blue { background: #4986e7; }
-.bg3, .red { background: #d06b64; }
-.bg4, .purple { background: #cd74e6; }
-.bg5, .azure { background: #9fe1e7; }
-
-body {
-    margin: 20px;
-}
-
-pre {
-    background: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-.container {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.clear { clear: both; }
-
-	
 	

@@ -49,6 +49,7 @@
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/css/jquery.panzoom.min.css \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/css/normalize.css \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/css/pinchzoomer.min.css \
+/Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/css/simple-slider.css \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/css/style.css \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/css/style2.css \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/img/connect.png \
@@ -78,6 +79,7 @@
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/js/ninjaScroll.js \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/js/pinchzoom.js \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/js/SavePhotoPlugin.js \
+/Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/js/simple-slider.js \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/js/touch-punch.js \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/js/zepto.min.js \
 /Users/dickweed/documents/app_intake/app_2/platforms/android/assets/www/js/fullPage.js-master/bower.json \
