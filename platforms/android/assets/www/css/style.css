@@ -312,21 +312,23 @@ overflow-y: hidden !important;
     -webkit-appearance: none;
 	  
   }
-  	#theImg{
+  #theImg{
 	  	
-	  width:50px;
-	  height:50px;
+	  width:100px;
+	  height:100px;
 	  z-index: 100000;
 	  /* position:absolute; */
 	  
-	  	}
+	}
 	  	
-	  	.dragImg{
+	.dragImg{
 		  	
-		  	width: 50px;
+		  	/*
+width: 50px;
 		  	height: 50px;
 		  	z-index: 9999999;
 		  	position: relative;
+*/
 		  	}
   
 	  
