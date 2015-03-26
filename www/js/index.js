@@ -48,6 +48,26 @@ var app = {
     }
 };
 
+/////////slider 
+var s;//size according to the range input 
+
+
+$(function() {
+    $( "#slider" ).slider({
+      value:1,
+      min: 1,
+      max: 15,
+      step: 1,
+      slide: function( event, ui ) {
+        $( "#amount" ).val( "s" + ui.value );
+      }
+    });
+    $( "#amount" ).val( "s" + $( "#slider" ).slider( "value" ) );
+    var x = ui.value;
+    s = x;
+    console.log(s);
+  });
+  
  
 ///////////////////////// CANVAS!!
 // <script>
@@ -62,13 +82,15 @@ var app = {
     coloring = c;
 	} 
 	
-	var s;//size according to the range input 
 	
-	function updateSlider(slideAmount) {
-		var x = document.getElementById("slider").value;
+	
+	/*
+function updateSlider(slideAmount) {
+	var x = document.getElementById("slider").value;
     s = x;
     console.log(s);
 	}
+*/
 	
 	
     // Variables to keep track of the mouse position and left-button status 
