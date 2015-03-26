@@ -63,7 +63,7 @@ $(function() {
       }
     });
     $( "#amount" ).val( "s" + $( "#slider" ).slider( "value" ) );
-    var x = ui.value;
+    var x = slider.value;
     s = x;
     console.log(s);
   });
@@ -388,32 +388,54 @@ function save(dataURL){
 $("#dropHere").droppable({
        drop: function(e, ui){
                if(ui.draggable.hasClass("dragImg")) {
-     $(this).append($(ui.helper).clone().css('z-index','999999','left', '100'));
-   
+	               
+	               var newUI = $('<div>');
+	               newUI.append(ui.children('img').eq(0).clone());
+	               newUI.addClass('dragImg');
+	               newUI.draggable({
+                         helper: "clone",
+                         
+                         //Create counter
+                         start: function() { counts[0]++; }
+                        });
+	               
+	               /*
+		               
+		               */
+	               
+     //$(this).append($(ui.helper).clone().css('z-index','999999'));
+  $(this).append(newUI);
      console.log("clone dropped");
    
    //Pointing to the dragImg class in dropHere and add new class.
-         $("#dropHere .dragImg").addClass("item-"+counts[0]);
-            $("#dropHere .theImg").addClass("imgSize-"+counts[0]);
+         newUI.addClass("item-"+counts[0]);
+         newUI.css('position','absolute');
+         newUI.css('display','block');
+         newUI.css('top','160px');
+         newUI.css('left','300px');
+            //$("#dropHere .theImg").addClass("imgSize-"+counts[0]);
             console.log("adding new ");
                 
    //Remove the current class (ui-draggable and dragImg)
-         $("#dropHere .item-"+counts[0]).removeClass("dragImg ui-draggable ui-draggable-dragging");
+         //$("#dropHere .item-"+counts[0]).removeClass("dragImg");
+         //$("#dropHere .item-"+counts[0]).removeClass("ui-draggable");
+         $("#dropHere .dragImg").removeClass("ui-draggable-dragging");
+         
 
 
 $(".item-"+counts[0]).tap(function() {
-$(this).remove(); });
+$(this).remove(); 
+});
 // console.log("about to make resizable"); 
-make_draggable($(".item-"+counts[0])); 
+make_draggable($("item-"+counts[0])); 
 $(".imgSize-"+counts[0]).resizable(resizeOpts);
 	// console.log("making resizable");
-		    
-       } 
-
-
-
-       }
+      
        // console.log("making resizable");
+      }
+      
+      }
+      
       });
 
 
